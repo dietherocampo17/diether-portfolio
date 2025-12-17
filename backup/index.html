@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diether F. Ocampo | System Administrator</title>
+    <meta name="description" content="Portfolio of Diether F. Ocampo - System Administrator specializing in Infrastructure, VoIP, and Automation.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Placeholder for FontAwesome if needed, or use SVGs -->
+    <!-- Using a CDN for icons for simplicity, or we can use raw SVGs. Let's use a reliable CDN or just text/emoji for now to avoid external deps issues if offline, but user has internet. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">&lt;Diether/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Diether F. Ocampo</h1>
+            <h2 class="role">I am a <span id="typing-text"></span><span class="cursor">|</span></h2>
+            <p class="bio">Specializing in Infrastructure, VoIP Systems, Automation, and Security Operations.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn primary">Get in Touch</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">01. About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am an experienced <strong>System Administrator</strong> with a passion for building robust infrastructure and automating complex workflows. 
+                        My expertise spans across <strong>VoIP systems, Virtualization (Proxmox), and Linux Administration</strong>.
+                    </p>
+                    <p>
+                        I enjoy bridging the gap between operations and development, using <strong>Python</strong> and web technologies to create internal tools that streamline processes.
+                        Whether it's managing a call center's dialer infrastructure or securing a corporate network, I focus on reliability, security, and efficiency.
+                    </p>
+                </div>
+                <!-- Optional: Add an image here if the user provides one later -->
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">02. Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <!-- Infrastructure -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-server"></i></div>
+                    <h3>Infrastructure & Virtualization</h3>
+                    <ul>
+                        <li>Proxmox VE (VM & LXC)</li>
+                        <li>Backup & Restore Strategies</li>
+                        <li>Resource Optimization</li>
+                        <li>Bare-metal Administration</li>
+                    </ul>
+                </div>
+
+                <!-- OS -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fab fa-linux"></i></div>
+                    <h3>Operating Systems</h3>
+                    <ul>
+                        <li>Linux (Ubuntu, Debian, CentOS)</li>
+                        <li>Windows Server (AD DS, DNS, GPO)</li>
+                        <li>Bash & Python Scripting</li>
+                        <li>Systemd & Cron</li>
+                    </ul>
+                </div>
+
+                <!-- VoIP -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-headset"></i></div>
+                    <h3>VoIP & Call Center</h3>
+                    <ul>
+                        <li>Yeastar P-Series</li>
+                        <li>VICIdial & GoAutoDial</li>
+                        <li>Asterisk & FreePBX</li>
+                        <li>SIP Trunking & IVR</li>
+                    </ul>
+                </div>
+
+                <!-- Storage -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-hdd"></i></div>
+                    <h3>File & Storage</h3>
+                    <ul>
+                        <li>Synology NAS</li>
+                        <li>SMB & File Permissions</li>
+                        <li>Data Replication</li>
+                        <li>AD Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Monitoring -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Monitoring & RMM</h3>
+                    <ul>
+                        <li>Zabbix</li>
+                        <li>Tactical RMM</li>
+                        <li>GLPI Asset Management</li>
+                        <li>Endpoint Monitoring</li>
+                    </ul>
+                </div>
+
+                <!-- Security -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Security & Compliance</h3>
+                    <ul>
+                        <li>Sophos MDR</li>
+                        <li>Firewall Config (UFW)</li>
+                        <li>Server Hardening</li>
+                        <li>Incident Response</li>
+                    </ul>
+                </div>
+
+                <!-- Dev -->
+                <div class="skill-card">
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    <h3>Programming & Automation</h3>
+                    <ul>
+                        <li>Python (Automation/API)</li>
+                        <li>Flask & Jinja2</li>
+                        <li>HTMX & SQLAlchemy</li>
+                        <li>Internal Dashboards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">03. Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-broadcast-tower"></i>
+                        <div class="project-links">
+                            <!-- Add links if available -->
+                        </div>
+                    </div>
+                    <h3>TTS Broadcasting System</h3>
+                    <p class="project-desc">
+                        Automated broadcasting system using GoAutoDial & VICIdial. Features Excel-based lead upload, custom field mapping, and scheduled execution via cron.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Asterisk</li>
+                        <li>Python</li>
+                        <li>Cron</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-microphone-alt"></i>
+                    </div>
+                    <h3>VoIP Call Recording Archival</h3>
+                    <p class="project-desc">
+                        Robust archival system integrating Yeastar & Asterisk with NAS storage. Implements non-destructive backups and automated retention policies.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Bash</li>
+                        <li>NAS</li>
+                        <li>SIP</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-address-card"></i>
+                    </div>
+                    <h3>Call Pop & CRM Integration</h3>
+                    <p class="project-desc">
+                        Real-time caller information display using Yeastar pop-up URL integration. Fetches data via API from GoAutoDial for immediate agent context.
+                    </p>
+                    <ul class="project-tech">
+                        <li>API</li>
+                        <li>Webhooks</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>User Access Management Tool</h3>
+                    <p class="project-desc">
+                        Internal web application for user registration and role-based access control. Delivers user data via API routes.
+                    </p>
+                    <ul class="project-tech">
+                        <li>Flask</li>
+                        <li>SQLAlchemy</li>
+                        <li>HTMX</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">04. Get In Touch</h2>
+            <p class="contact-text">
+                I'm currently open to new opportunities in System Administration, DevOps, and Infrastructure Engineering.
+                Whether you have a question or just want to say hi, I'll try my best to get back to you!
+            </p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="btn primary">Say Hello</a>
+                <!-- Add actual links if provided, otherwise placeholders -->
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Designed & Built by Diether F. Ocampo</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
