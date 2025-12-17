@@ -42,17 +42,26 @@ const Hero = () => {
                     transition={{ duration: 0.5 }}
                     className="max-w-3xl"
                 >
-                    <p className="font-mono text-sky-400 mb-4 text-lg">Hello, I'm</p>
-                    <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 tracking-tight">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 font-mono text-sm mb-6">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+                        </span>
+                        Available for Hire
+                    </div>
+
+                    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
                         Diether F. Ocampo
                     </h1>
-                    <h2 className="text-3xl md:text-5xl font-bold text-slate-400 mb-6 h-20 md:h-auto">
-                        I am a <span className="text-slate-200">{currentRole}</span>
-                        <span className="animate-pulse text-sky-400">|</span>
+                    <h2 className="text-2xl md:text-4xl font-semibold text-slate-400 mb-8 h-16">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-400 font-bold">
+                            {currentRole}
+                        </span>
+                        <span className="animate-pulse text-slate-600 ml-1">|</span>
                     </h2>
-                    <p className="text-slate-400 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
-                        Specializing in Infrastructure, VoIP Systems, Automation, and Security Operations.
-                        I build robust systems and automate complex workflows.
+                    <p className="text-slate-400 text-lg md:text-xl max-w-2xl mb-10 leading-relaxed">
+                        Specializing in <span className="text-slate-200">Infrastructure</span>, <span className="text-slate-200">VoIP Systems</span>, and <span className="text-slate-200">Automation</span>.
+                        I bridge the gap between complex operations and reliable software solutions.
                     </p>
 
                     <div className="flex gap-4">
